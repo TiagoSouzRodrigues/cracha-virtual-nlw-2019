@@ -1,0 +1,114 @@
+<!--
+    HTML(HyperText Markup Language)
+
+    HyperText - Hiper texto (texto com links )
+
+    Markup - Marcação (tags) 
+
+    Language - Linguagem(regras de uma linguagem)
+
+  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tiago Rodrigues - DoWhile2022</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=
+        Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.svg" alt="Selo Rockeseat" />
+          </span>
+          <img
+            src="https://github.com/TiagoSouzRodrigues.png"
+            alt="Foto pessoal "
+          />
+        </div>
+        <h1 id="userName">Tiago Rodrigues</h1>
+        <a href="https://github.com/TiagoSouzRodrigues" target="_blank">
+          <img src="images/github 2.svg" alt="ícone do github" />
+          tiagorodrigues</a
+        >
+
+        <p>Programador e Desenvolvedor Front-End</p>
+      </div>
+      <ul id="socialLinks">
+        <li class="youtube">
+          <a
+            href="https://www.youtube.com/channel/UCHtir4V_3Fzp4JqBReJzIcw"
+            target="_blank"
+          >
+            <img src="images/youtube.svg.svg" alt="icone do youtube" />
+          </a>
+        </li>
+
+        <li class="instagram">
+          <a href="https://instagram.com/tiagorodrigues_souza" target="_blank">
+            <img
+              src="images/instagram.svg.svg
+                    
+                    "
+              alt="icone do instagram"
+          /></a>
+        </li>
+        <li class="facebook">
+          <a href="https://www.facebook.com/RodriguesTiag/" target="_blank">
+            <img src="images/facebook.svg.svg" alt="icone do facebook"
+          /></a>
+        </li>
+        <li class="twitter">
+          <a href="https://twitter.com/TiagoRod_Souza" target="_blank">
+            <img src="images/twiter.svg.svg" alt="icone do twitter"
+          /></a>
+        </li>
+      </ul>
+    </main>
+    <script>
+      // Tipos primitivos:
+      // LP , trabalha com dados.Tipos de dados :
+      // texto - sempre entre aspas
+      // numeros - sem aspas, possivel fazer contas
+      // verdadeiro ou falso- True (verdadeiro) false ( falso )
+      // Variáveis :
+      // utilizadas para "guardar" dados
+      //alert(user.phone)
+      // Variaveis : let ou const
+      // let = pode mudar o valor da variável
+      // const = não muda o valor da variavel
+      const linksSocialMedia = {
+        github: 'TiagoSouzRodrigues',
+        youtube: 'channel/UCHtir4V_3Fzp4JqBReJzIcw',
+        instagram: 'tiagorodrigues_souza',
+        twitter: 'TiagoRod_Souza',
+        facebook: 'RodriguesTiag'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
+          //alert(li.children[0].href)
+        }
+      }
+
+      changeSocialMediaLinks()
+
+      //Padrao de escrita das variaveis:
+      // camelCase
+      // PascalCase
+      // snake_case
+    </script>
+  </body>
+</html>
