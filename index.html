@@ -1,17 +1,7 @@
-<!--
-    HTML(HyperText Markup Language)
-
-    HyperText - Hiper texto (texto com links )
-
-    Markup - Marcação (tags) 
-
-    Language - Linguagem(regras de uma linguagem)
-
-  -->
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
-    <title>Tiago Rodrigues - DoWhile2022</title>
+    <title>Tiago Rodrigues</title>
 
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +18,7 @@
       <div class="container">
         <div class="avatar">
           <span>
-            <img src="images/build.svg" alt="Selo Rockeseat" />
+            <img src="images/build.svg" class="selo" />
           </span>
           <img
             src="https://github.com/TiagoSouzRodrigues.png"
@@ -41,7 +31,7 @@
           tiagorodrigues</a
         >
 
-        <p>Programador e Desenvolvedor Front-End</p>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas, aprimorando conhecimentos em Html, Css e Js</p>
       </div>
       <ul id="socialLinks">
         <li class="youtube">
@@ -75,18 +65,7 @@
       </ul>
     </main>
     <script>
-      // Tipos primitivos:
-      // LP , trabalha com dados.Tipos de dados :
-      // texto - sempre entre aspas
-      // numeros - sem aspas, possivel fazer contas
-      // verdadeiro ou falso- True (verdadeiro) false ( falso )
-      // Variáveis :
-      // utilizadas para "guardar" dados
-      //alert(user.phone)
-      // Variaveis : let ou const
-      // let = pode mudar o valor da variável
-      // const = não muda o valor da variavel
-      const linksSocialMedia = {
+        const linksSocialMedia = {
         github: 'TiagoSouzRodrigues',
         youtube: 'channel/UCHtir4V_3Fzp4JqBReJzIcw',
         instagram: 'tiagorodrigues_souza',
@@ -98,17 +77,12 @@
         for (let li of socialLinks.children) {
           const social = li.getAttribute('class')
 
-          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}`
-          //alert(li.children[0].href)
+          li.children[0].href = `http://${social}.com/${linksSocialMedia[social]}
         }
       }
 
       changeSocialMediaLinks()
-
-      //Padrao de escrita das variaveis:
-      // camelCase
-      // PascalCase
-      // snake_case
+ 
     </script>
   </body>
 </html>
