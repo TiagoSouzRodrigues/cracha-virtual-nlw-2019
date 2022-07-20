@@ -15,16 +15,17 @@
         body {
             display: grid;
             place-items: center;
-            background: linear-gradient(rgb(0, 0, 0), rgb(53, 53, 53));
-
+            background: radial-gradient(rgb(238, 105, 105), rgb(0, 0, 0));
+            
             
         }
 
         main {
             background: url(./images/Background.svg);
-            width: 370px;
-            height: 680px;
+            width: 368px;
+            height: 700px;
             margin-top: -3.5rem;
+
             
 
         }
@@ -43,6 +44,7 @@
             width: 10rem;
             margin: 11.5rem auto auto;
             position: relative;
+            
   
         }
 
