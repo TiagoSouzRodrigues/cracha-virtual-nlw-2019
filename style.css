@@ -19,18 +19,13 @@
             
             
         }
-
         main {
             background: url(./images/Background.svg);
             width: 368px;
             height: 700px;
             margin-top: -3.5rem;
-
-            
-
         }
-        
-
+       
         .container {
             max-width: 250px;
             margin-left:auto;
@@ -45,7 +40,6 @@
             margin: 11.5rem auto auto;
             position: relative;
             
-  
         }
 
         .avatar span {
